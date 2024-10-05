@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation web</title>
+    <script src="Donationjs.html"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .banner{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(pexels-abu-shanto-90660924-10546234.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .navbar{
+            width: 85%;
+            margin: auto;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+        .logo{
+            width: 60px;
+            cursor: pointer;
+        }
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+        }
+        .navbar ul li::after{
+            content: '';
+            height: 3px;
+            width:0;
+            background: #FD6C19;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition:0.5s;
+        }
+        .navbar ul li:hover::after{
+            width: 100%;
+        }
+        .content{
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            color: white;
+            text-align: center;
+        }
+        .content h1{
+            font-size: 40px;
+            text-transform: uppercase;
+        }
+        .content p {
+            margin: 8px;
+        }
+        button{
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid white;
+            background-color: #FD6C19;
+            cursor: pointer;
+        }
+        .secsecond h1{
+            margin-top: 24px;
+            text-align: center;
+        }
+        .secsecinside{
+            display: flex;
+            align-items: center;
+            
+        }
+        .secsecinside img{
+            width: 740px;
+            margin: 24px;
+        }
+        .secsecinside p{
+            margin: 42px;
+            font-size: 24px;
+        }
+        .cardcontainer{
+            display: flex;
+            justify-content: center; 
+            flex-wrap: wrap;
+            margin-top: 100px;      
+         }
+         .card{
+            width: 300px;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0px 2px 4px black;
+            margin: 20px;
+            padding: 8px;
+            text-align: center;
+
+         }
+         .card img{
+            width: 300px;
+            height: 200px;
+         }
+         .card-content{
+            padding: 16px;
+         }
+         .card-content a{
+            text-decoration: none;
+            color: #FD6C19;
+            font-weight: bold;
+           
+         }
+         .currentcause{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 24px;
+         }
+         .cus{
+            margin: 24px;
+            text-align: center;
+            color: white;
+         }
+         .currentcausesection{
+            background-color: #0E4375;
+            padding: 24px;
+         }
+       
+       
+    </style>
+</head>
+<body>
+   <div class="banner">
+    <div class="navbar">
+        <img src="Group 6.png" class="logo">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Contact Us</a></li>
+            
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Together, We Can Make a Difference!</h1>
+        <P>Join us in supporting those in need. Your contributions can bring hope and change to lives across the world.<br> Donate today and be the light for someone in need.</P>
+    <div>
+        <a href="Donationform.html">
+        <button type="button">DONATE NOW</button>
+        </a>
+    </div>
+    </div>
+    
+   </div>
+
+   <div class="secsecond">
+    <h1>WHAT DO WE DO</h1>
+    <div class="secsecinside">
+     <img src="donationimg.png" alt="donationimage">
+     <p>At HandsTogether, our mission is to empower and uplift those in need by connecting generous donors with life-changing causes. We believe that every small contribution has the power to create lasting change. From providing essential resources like food, water, and shelter, to supporting education and healthcare, your donations help transform lives. By working together, we aim to build stronger, more resilient communities and offer hope to those facing hardship. Join us in making a difference—one donation, one act of kindness at a time.
+
+     </p>
+    </div>
+   </div>
+   
+ <div class="currentcausesection">
+   <h1 class="cus">CURRENT CAUSE</h1>
+   
+   <div class="currentcause">
+   
+    
+    <div class="card-container">
+        <div class="card">
+            <img src="card1.jpg">
+            <div class="card-content">
+                <h3>Old Age</h3>
+                <p>Support the renovation of an old age home to provide a safe, comfortable, and dignified living space for the elderly. Your contribution will help restore hope and improve their quality of life.</p>
+                <a href="" class="btn">READ MORE</a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="card-container">
+        <div class="card-container">
+            <div class="card">
+                <img src="card2.jpg">
+                <div class="card-content">
+                    <h3>Education</h3>
+                    <p>Support the renovation of an old age home to provide a safe, comfortable, and dignified living space for the elderly. Your contribution will help restore hope and improve their quality of life.</p>
+                    <a href="" class="btn">READ MORE</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+        <div class="card">
+            <img src="card1.jpg">
+            <div class="card-content">
+                <h3>Medical</h3>
+                <p>Support the renovation of an old age home to provide a safe, comfortable, and dignified living space for the elderly. Your contribution will help restore hope and improve their quality of life.</p>
+                <a href="" class="btn">READ MORE</a>
+            </div>
+        </div>
+        
+    </div>
+
+   </div>
+</diV>
+
+   
+</body>
+</html>

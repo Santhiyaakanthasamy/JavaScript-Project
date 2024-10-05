@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beneficiaries</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .banner {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            background-color: #f4f4f4; 
+            padding-top: 20px;
+        }
+        .container {
+            width: 80%;
+            color: black; 
+            text-align: center; 
+        }
+        h3 {
+            margin-bottom: 20px; 
+            font-size: 24px; 
+        }
+        .card {
+            background-color: white;
+            border: 2px solid #FD6C19; 
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            width: 28%; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .card img {
+            width: 100px;
+            height: 100px; 
+            border-radius: 10px;
+            margin-bottom: 10px; 
+        }
+        .card h4 {
+            margin: 10px 0;
+            font-size: 18px; 
+        }
+        .card p {
+            margin: 5px 0;
+        }
+        button {
+            padding: 8px; 
+            background-color: #FD6C19; 
+            border: 2px solid #FD6C19; 
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+        button:hover {
+            background-color: white; 
+            color: #FD6C19; 
+            border-color: #FD6C19;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start; 
+        }
+        .floating-button {
+            position: fixed;
+            bottom: 20px; 
+            right: 20px;
+            background-color: #FD6C19; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            padding: 10px 15px; 
+            font-size: 16px;
+            cursor: pointer; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+            transition: background-color 0.3s;
+            display: flex; 
+            align-items: center; 
+        }
+        .floating-button:hover {
+            background-color: white; 
+            color: #FD6C19; 
+        }
+        .arrow {
+            margin-left: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="container">
+            <h3>Beneficiaries</h3>
+            <div class="card-container">
+                
+                <div class="card">
+                    <img src="card1.jpg" alt="Beneficiary Photo">
+                    <h4>Cause: Education</h4>
+                    <p>Need: School Fees</p>
+                    <p>Amount: ₹500</p>
+                    <p>Location: City A</p>
+                    <button>Select</button>
+                </div>
+                
+                <div class="card">
+                    <img src="card2.jpg" alt="Beneficiary Photo">
+                    <h4>Cause: Health</h4>
+                    <p>Need: Medical Treatment</p>
+                    <p>Amount: ₹300</p>
+                    <p>Location: City B</p>
+                    <button>Select</button>
+                </div>
+                
+                <div class="card">
+                    <img src="card1.jpg" alt="Beneficiary Photo">
+                    <h4>Cause: Food</h4>
+                    <p>Need: Monthly Groceries</p>
+                    <p>Amount: ₹150</p>
+                    <p>Location: City C</p>
+                    <button>Select</button>
+                </div>
+            
+                <div class="card">
+                    <img src="card2.jpg" alt="Beneficiary Photo">
+                    <h4>Cause: Housing</h4>
+                    <p>Need: Rent Assistance</p>
+                    <p>Amount: ₹600</p>
+                    <p>Location: City D</p>
+                    <button>Select</button>
+                </div>
+                
+                <div class="card">
+                    <img src="card1.jpg" alt="Beneficiary Photo">
+                    <h4>Cause: Clothing</h4>
+                    <p>Need: Winter Clothes</p>
+                    <p>Amount: ₹100</p>
+                    <p>Location: City E</p>
+                    <button>Select</button>
+                </div>
+                
+                <div class="card">
+                    <img src="card2.jpg" alt="Beneficiary Photo">
+                    <h4>Cause: Education</h4>
+                    <p>Need: Books</p>
+                    <p>Amount: ₹200</p>
+                    <p>Location: City F</p>
+                    <button>Select</button>
+                </div>
+                
+                <div class="card">
+                    <img src="card1.jpg" alt="Beneficiary Photo">
+                    <h4>Cause: Health</h4>
+                    <p>Need: Eye Surgery</p>
+                    <p>Amount: ₹800</p>
+                    <p>Location: City G</p>
+                    <button>Select</button>
+                </div>
+                
+                <div class="card">
+                    <img src="card2.jpg" alt="Beneficiary Photo">
+                    <h4>Cause: Food</h4>
+                    <p>Need: Food Pack</p>
+                    <p>Amount: ₹400</p>
+                    <p>Location: City H</p>
+                    <button>Select</button>
+                </div>
+                
+                <div class="card">
+                    <img src="card1.jpg" alt="Beneficiary Photo">
+                    <h4>Cause: Community Service</h4>
+                    <p>Need: Supplies</p>
+                    <p>Amount: ₹250</p>
+                    <p>Location: City I</p>
+                    <button>Select</button>
+                </div>
+                
+                <div class="card">
+                    <img src="card1.jpg" alt="Beneficiary Photo">
+                    <h4>Cause: Environment</h4>
+                    <p>Need: Planting Trees</p>
+                    <p>Amount: ₹300</p>
+                    <p>Location: City J</p>
+                    <button>Select</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="floating-button" onclick="redirectToForm()">Selected: 0 <span class="arrow">➜</span></button> 
+
+    <script>
+        let selectedCount = 0;
+        const buttons = document.querySelectorAll('.card button');
+        const floatingButton = document.querySelector('.floating-button');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                if (selectedCount < 3) {
+                    selectedCount++;
+                    floatingButton.textContent = `Selected: ${selectedCount} `;
+                    floatingButton.innerHTML += '<span class="arrow">➜</span>'; 
+                } else {
+                    alert("You can only select 3.");
+                }
+            });
+        });
+
+        function redirectToForm() {
+            if (selectedCount > 0) {
+                window.location.href = 'Donationform.html'; 
+            } else {
+                alert("Please select at least one beneficiary before proceeding.");
+            }
+        }
+
+        
+    </script>
+</body>
+</html>
